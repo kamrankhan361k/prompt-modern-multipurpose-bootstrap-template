@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Prompt"
+    })
+</head>
+
+<body>
+
+    <!-- Top navbar  -->
+    @@include('../partials/navbars/navbar3.html', { "classList": "shadow fixed-top navbar-light bg-white", "hideSearch": false, "ctaButtonClass": "btn btn-outline-primary btn-sm"})
+
+    <div class="content py-0 py-sm-4 px-0 px-sm-3 bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2 col-md-3">
+                    @@include("./sidenav.html")
+                </div>
+                <div class="col-xl-10 col-md-9">
+                    <h4 class="my-0">Heros</h4>
+                    <p>
+                        A hero is a top section typically consisting of a background image, or video, or illustrations, or animations, with text and sometimes a call to action.
+                    </p>
+
+
+                    <!-- hero example Start -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                    <div class="bg-gradient2">
+                                        @@include('../partials/heros/hero8.html')
+                                    </div>
+
+                                    <div class="code-block mt-4">
+                                        <h6>Example</h6>
+                    
+                                        <button class="btn btn-sm btn-copy-clipboard" data-clipboard-target="#hero-ex-1">
+                                            Copy
+                                        </button>
+                    
+                                        <pre class="prettyprint lang-js escape" id="hero-ex-1">
+                                            &commat;&commat;include('../partials/heros/hero8.html')
+                                        </pre>
+
+                                        <p class="mt-4">There are 12 different options available in Prompt at the moment. You could use any based on your need.</p>
+                                        <pre class="prettyprint lang-js escape mt-2" id="hero-ex-2">
+                                            &commat;&commat;include('../partials/heros/hero1.html')
+&commat;&commat;include('../partials/heros/hero2.html')
+&commat;&commat;include('../partials/heros/hero3.html')
+&commat;&commat;include('../partials/heros/hero4.html')
+&commat;&commat;include('../partials/heros/hero5.html')
+&commat;&commat;include('../partials/heros/hero6.html')
+&commat;&commat;include('../partials/heros/hero7.html')
+&commat;&commat;include('../partials/heros/hero8.html')
+&commat;&commat;include('../partials/heros/hero9.html')
+&commat;&commat;include('../partials/heros/hero10.html')
+&commat;&commat;include('../partials/heros/hero11.html')
+&commat;&commat;include('../partials/heros/hero12.html')
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hero example end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    @@include("../partials/footer-scripts.html")
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+
+    <!-- build:js @@webRoot/assets/js/docs.js -->
+    <script src="@@webRoot/assets/js/docs.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>

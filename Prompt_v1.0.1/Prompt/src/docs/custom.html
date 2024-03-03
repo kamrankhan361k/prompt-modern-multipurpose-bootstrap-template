@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+        "pageTitle": "Prompt | Documentation"
+    })
+</head>
+
+<body>
+
+    <!-- Top navbar  -->
+    @@include('../partials/navbars/navbar3.html', { "classList": "shadow fixed-top navbar-light bg-white", "hideSearch": false, "ctaButtonClass": "btn btn-outline-primary btn-sm"})
+
+    <div class="content py-0 py-sm-4 px-0 px-sm-3 bg-light" data-sticky-container>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-2 col-xl-2 sidenav sidenav-left">
+                    @@include("./sidenav.html")
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2">
+                    <!-- Avatars Start -->
+                    @@include("./custom-avatars.html")
+                    <!-- Avatars End -->
+
+                    <!-- Blog Post Cards Start -->
+                    @@include("./custom-blog-items.html")
+                    <!-- Blog Post Cards End -->
+
+                    <!-- pricing-cards start -->
+                    @@include("./custom-pricing-cards.html")
+                    <!-- pricing-cards end -->
+
+                    <!-- gallery start -->
+                    @@include("./custom-gallery.html")
+                    <!-- gallery end -->
+
+                    <!-- icons -->
+                    @@include("./custom-icons.html")
+                    <!-- icons end -->
+
+                </div>
+
+                <div class="col-12 col-lg-2 col-xl-2 d-none d-lg-block px-lg-0 sidenav sidenav-right">
+                    <div class="border-left-lg">
+                        <ul class="nav flex-column" id="toc-list">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#avatars" data-bs-toggle="smooth-scroll">Avatars</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog-cards" data-bs-toggle="smooth-scroll">Blog Items</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery" data-bs-toggle="smooth-scroll">Gallery</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#icons" data-bs-toggle="smooth-scroll">Icons</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pricing-cards" data-bs-toggle="smooth-scroll">Pricing Cards</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    @@include("../partials/footer-scripts.html")
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+
+    <!-- docs -->
+    <script src="@@webRoot/assets/js/docs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Prompt"
+    })
+</head>
+
+<body>
+
+    <!-- Top navbar  -->
+    @@include('../partials/navbars/navbar3.html', { "classList": "shadow fixed-top navbar-light bg-white", "hideSearch": false, "ctaButtonClass": "btn btn-outline-primary btn-sm"})
+
+    <div class="content py-0 py-sm-4 px-0 px-sm-3 bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2 col-md-3">
+                    @@include("./sidenav.html")
+                </div>
+                <div class="col-xl-10 col-md-9">
+
+                    <h4 class="my-0">Navbar</h4>
+                    <p>
+                        The powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for collapse plugin.
+                    </p>
+
+
+                    <!-- header1 Start -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="border">
+                                        @@include('../partials/navbars/navbar1.html', { "classList": "", "hideSearch": true, "ctaButtonClass": "btn-primary btn-sm"})
+                                    </div>
+
+                                    <div class="code-block mt-4">
+                                        <h6>Example</h6>                    
+                                        <button class="btn btn-sm btn-copy-clipboard" data-clipboard-target="#nav-ex-1">Copy</button>
+                    
+                                        <pre class="prettyprint lang-html escape" id="nav-ex-1">
+                                            &commat;&commat;include('../partials/navbars/navbar1.html', { "classList": "", "hideSearch": true, "ctaButtonClass": "btn-primary btn-sm"})
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <!-- header1 end -->
+
+                    <!-- header1 dark start -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    @@include('../partials/navbars/navbar1.html', { "classList": "navbar-dark bg-dark", "hideSearch": true, "lightLogo": true, "ctaButtonClass": "btn-primary btn-sm"})
+
+                                    <div class="code-block mt-4">
+                                        <h6>Example</h6>                   
+                                        <button class="btn btn-sm btn-copy-clipboard" data-clipboard-target="#nav-ex-2">Copy</button>
+                    
+                                        <pre class="prettyprint lang-html escape" id="nav-ex-2">
+                                            &commat;&commat;include('../partials/navbars/navbar1.html', { "classList": "navbar-dark bg-dark", "hideSearch": true, "ctaButtonClass": "btn-primary btn-sm"})
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header1 dark end -->
+
+                    <!-- header2 start -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="border">
+                                        @@include('../partials/navbars/navbar2.html', { "classList": "", "hideSearch": false, "ctaButtonClass": "btn-primary btn-sm"})
+                                    </div>
+                                    
+                                    <div class="code-block mt-4">
+                                        <h6>Example</h6>                    
+                                        <button class="btn btn-sm btn-copy-clipboard" data-clipboard-target="#nav-ex-3">Copy</button>
+                    
+                                        <pre class="prettyprint lang-html escape" id="nav-ex-3">
+                                            &commat;&commat;include('../partials/navbars/navbar2.html', { "classList": "", "hideSearch": false, "ctaButtonClass": "btn-primary btn-sm"})
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header2 end -->
+
+                    <!-- header3 start -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="border">
+                                        @@include('../partials/navbars/navbar3.html', {"fixedWidth": false, "classList": "", "ctaButtonClass": "btn-primary btn-sm"})
+                                    </div>
+
+                                    <div class="code-block mt-4">
+                                        <h6>Example</h6>
+                    
+                                        <button class="btn btn-sm btn-copy-clipboard" data-clipboard-target="#nav-ex-4">
+                                            Copy
+                                        </button>
+                    
+                                        <pre class="prettyprint lang-html escape" id="nav-ex-4">
+                                            &commat;&commat;include('../partials/navbars/navbar3.html', {"fixedWidth": false, "classList": "", "ctaButtonClass": "btn-primary btn-sm"})
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header3 end -->
+
+                    <!-- header4 start -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="border">
+                                        @@include('../partials/navbars/navbar4.html', {"fixedWidth": false, "classList": "", "ctaButtonClass": "btn-primary btn-sm"})
+                                    </div>
+
+                                    <div class="code-block mt-4">
+                                        <h6>Example</h6>                    
+                                        <button class="btn btn-sm btn-copy-clipboard" data-clipboard-target="#nav-ex-5">Copy</button>
+                    
+                                        <pre class="prettyprint lang-html escape" id="nav-ex-5">
+                                            &commat;&commat;include('../partials/navbars/navbar4.html', {"fixedWidth": false, "classList": "", "ctaButtonClass": "btn-primary btn-sm"})
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header4 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    @@include("../partials/footer-scripts.html")
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+
+    
+    <script src="@@webRoot/assets/js/docs.js"></script>
+
+</body>
+
+</html>

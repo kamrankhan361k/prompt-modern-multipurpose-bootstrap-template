@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar navbar-expand-lg topnav-menu @@classList" @@if (context.sticky == true){data-toggle="sticky"}>
+    <div class="container@@if (context.fixedWidth !== true){-fluid}">
+      <a href="#" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content2"
+        aria-controls="topnav-menu-content2" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+
+      <a class="navbar-brand me-lg-4 me-auto" href="/">
+        <img src="@@webRoot/assets/images/logo.png" height="30" class="d-inline-block align-top" alt="" />
+      </a>
+      <div class="collapse navbar-collapse" id="topnav-menu-content2">
+        @@if (context.hideSearch !== true) {
+        <form class="form-inline my-2 my-lg-0 me-lg-3">
+          <div class="form-control-with-hint">
+            <input type="text" class="form-control" id="search-input" placeholder="What are you looking for?" />
+            <span class="form-control-feedback uil uil-search fs-16"></span>
+          </div>
+        </form>
+        }
+
+        @@include("../menu.html", {"classList": "me-auto", "showDownload": true})
+      </div>
+    </div>
+  </nav>
+
+</header>

@@ -1,0 +1,154 @@
+<div class="row" id="nav-tabs">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-0">Nav Tabs</h5>
+                <p class="sub-header">
+                    Takes the basic nav and adds the <code>.nav-tabs</code> class to generate a
+                    tabbed interface.
+                </p>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#home" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                            <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="home"></i></span>
+                            <span class="d-none d-sm-block">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profile" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+                            <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="user"></i></span>
+                            <span class="d-none d-sm-block">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#messages" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                            <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="mail"></i></span>
+                            <span class="d-none d-sm-block">Messages</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content p-3 text-muted">
+                    <div class="tab-pane" id="home">
+                        <p>Vakal text here dolor sit amet, consectetuer adipiscing elit. Aenean
+                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                            quis enim.</p>
+                        <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate
+                            eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                            justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                            eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                    </div>
+                    <div class="tab-pane show active" id="profile">
+                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                            enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+                            dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                            Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+                            leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                        <p class="mb-0">Vakal text here dolor sit amet, consectetuer adipiscing
+                            elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.</p>
+                    </div>
+                    <div class="tab-pane" id="messages">
+                        <p>Vakal text here dolor sit amet, consectetuer adipiscing elit. Aenean
+                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                            quis enim.</p>
+                        <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate
+                            eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                            justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                            eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                    </div>
+                </div>
+
+                <div class="code-block mt-4">
+                    <h6>Example</h6>
+                    <button class="btn btn-sm btn-copy-clipboard" data-bs-target="#tab-ex-1">Copy</button>
+
+                    <pre class="prettyprint lang-html escape" id="tab-ex-1">
+                        <ul class="nav nav-tabs"><li class="nav-item"> <a href="#home" data-bs-toggle="tab" aria-expanded="false" class="nav-link"> <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="home"></i></span> <span class="d-none d-sm-block">Home</span> </a></li><li class="nav-item"> <a href="#profile" data-bs-toggle="tab" aria-expanded="true" class="nav-link active"> <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="user"></i></span> <span class="d-none d-sm-block">Profile</span> </a></li><li class="nav-item"> <a href="#messages" data-bs-toggle="tab" aria-expanded="false" class="nav-link"> <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="mail"></i></span> <span class="d-none d-sm-block">Messages</span> </a></li></ul> <div class="tab-content p-3 text-muted"> <div class="tab-pane" id="home"> ... </div> <div class="tab-pane show active" id="profile"> ... </div> <div class="tab-pane" id="messages"> ... </div> </div>
+                    </pre>
+                </div>
+
+                <ul class="nav nav-pills navtab-bg nav-justified p-1">
+                    <li class="nav-item">
+                        <a href="#home1" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                            <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="home"></i></span>
+                            <span class="d-none d-sm-block">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profile1" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+                            <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="user"></i></span>
+                            <span class="d-none d-sm-block">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#messages1" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                            <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="mail"></i></span>
+                            <span class="d-none d-sm-block">Messages</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content text-muted">
+                    <div class="tab-pane" id="home1">
+                        <p>Vakal text here dolor sit amet, consectetuer adipiscing elit. Aenean
+                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                            quis enim.</p>
+                        <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate
+                            eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                            justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                            eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                    </div>
+                    <div class="tab-pane show active" id="profile1">
+                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                            enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+                            dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                            Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+                            leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                        <p class="mb-0">Vakal text here dolor sit amet, consectetuer adipiscing
+                            elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.</p>
+                    </div>
+                    <div class="tab-pane" id="messages1">
+                        <p>Vakal text here dolor sit amet, consectetuer adipiscing elit. Aenean
+                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                            quis enim.</p>
+                        <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate
+                            eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                            justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                            eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                    </div>
+                </div>
+
+                <div class="code-block mt-4">
+                    <h6>Example</h6>
+                    <button class="btn btn-sm btn-copy-clipboard" data-bs-target="#tab-ex-2">Copy</button>
+
+                    <pre class="prettyprint lang-html escape" id="tab-ex-2">
+                        <ul class="nav nav-pills navtab-bg nav-justified"><li class="nav-item"> <a href="#home1" data-bs-toggle="tab" aria-expanded="false" class="nav-link"> <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="home"></i></span> <span class="d-none d-sm-block">Home</span> </a></li><li class="nav-item"> <a href="#profile1" data-bs-toggle="tab" aria-expanded="true" class="nav-link active"> <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="user"></i></span> <span class="d-none d-sm-block">Profile</span> </a></li><li class="nav-item"> <a href="#messages1" data-bs-toggle="tab" aria-expanded="false" class="nav-link"> <span class="d-block d-sm-none"><i class="icon icon-xxs" data-feather="mail"></i></span> <span class="d-none d-sm-block">Messages</span> </a></li></ul> <div class="tab-content text-muted"> <div class="tab-pane" id="home1"> ... </div> <div class="tab-pane show active" id="profile1"> ... </div> <div class="tab-pane" id="messages1"> ... </div> </div>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end col -->
+</div>

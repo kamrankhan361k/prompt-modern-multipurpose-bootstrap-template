@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+        "pageTitle": "Prompt | Documentation"
+    })
+</head>
+
+<body>
+
+    <!-- Top navbar  -->
+    @@include('../partials/navbars/navbar3.html', { "classList": "shadow fixed-top navbar-light bg-white", "hideSearch": false, "ctaButtonClass": "btn btn-outline-primary btn-sm"})
+
+    <div class="content py-0 py-sm-4 px-0 px-sm-3 bg-light vh-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2 col-md-3">
+                    @@include("./sidenav.html")
+                </div>
+
+                <div class="col-xl-10 col-md-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card" id="quick-start">
+                                <div class="card-body">
+                                    <h4 class="my-0">Quick Start</h4>
+                                    <p class="mt-2">
+                                        To get started, you need to do the following:
+                                    </p>
+
+                                    <ol class="mt-2">
+                                        <li>
+                                            Prompt uses <a href="https://yarnpkg.com/" class="text-primary">yarn</a> to manage the dependencies. In order to make it work, you will need NodeJS installed on your system. You can install the node js by downloading the package installer from the <a href="https://nodejs.org/" class="text-primary">official website</a>.
+                                        </li>
+                                        <li class="mt-2">
+                                            Make sure to have <a href="https://gulpjs.com/" class="text-primary">Gulp
+                                                CLI</a> installed and running at your system level. If you don't, you
+                                            can install it using following command:
+                                            
+                                            <div class="my-3 bg-gray-100 p-2 fw-bold"><code>npm install gulp-cli -g</code></div>
+                                        </li>
+                                        <li>
+                                            Unzip your theme bundle zip and open your command line, making sure your command line prompt is at the root of the unzipped theme directory.
+                                        </li>
+                                        <li class="mt-2">
+                                            Install all the required dependencies using following command:
+
+                                            <div class="my-2 bg-gray-100 p-2 fw-bold"><code>yarn install</code></div>
+                                        </li>
+                                    </ol>
+
+                                    <p class="mt-4">
+                                        That's it. Now you are ready to compile everything including sass, js, etc. Please check following instructions for the same:
+                                    </p>
+
+                                    <ol class="mt-2">
+                                        <li>
+                                            To watch your Sass, JavaScript, image asset, and HTML changes, run the command below. It will start a local Browsersync instance on port 3000 to serve and auto-refresh your pages as you edit. 
+                                            <div class="my-2 bg-gray-100 p-2 fw-bold"><code>gulp</code></div>
+                                        </li>
+                                        <li class="mt-2">
+                                            When you are ready to go for production use, run the command below. It will create dist folder containing the html files, compiled css, images, etc.
+                                            <div class="my-2 bg-gray-100 p-2 fw-bold"><code>gulp build</code></div>
+                                        </li>
+                                    </ol>
+
+                                    <div class="alert alert-info mt-5">
+                                        <span class="fw-bold">Note:</span> 
+                                        You don't need to setup the above if you are not looking for any style modification. You might want to use the ready-to-use (pre-compiled) version available in the <span class="text-danger">dist</span> folder.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    @@include("../partials/footer-scripts.html")
+
+    <!-- docs -->
+    <script src="@@webRoot/assets/js/docs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Prompt"
+    })
+</head>
+
+<body>
+
+    <!-- Top navbar  -->
+    @@include('../partials/navbars/navbar3.html', { "classList": "shadow fixed-top navbar-light bg-white", "hideSearch": false, "ctaButtonClass": "btn btn-outline-primary btn-sm"})
+
+    <div class="content py-0 py-sm-4 px-0 px-sm-3 bg-light vh-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2 col-md-3">
+                    @@include("./sidenav.html")
+                </div>
+
+                <div class="col-xl-10 col-md-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card" id="customization">
+                                <div class="card-body">
+                                    <h4 class="my-0">Customization</h4>
+                                    <p class="mt-2">
+                                        Prompt allows you to easily customize the styling as well as content of the
+                                        common elements including top navbar or heros.
+                                    </p>
+
+                                    <h5 class="mt-4">Customize Styling (SCSS)</h5>
+
+                                    <p class="mb-1">Prompt comes with the power of Sass (scss). Scss lets you use
+                                        features that don't
+                                        exist in CSS yet like variables, nesting, mixins, inheritance and other nifty
+                                        goodies that make writing CSS fun again.</p>
+
+                                    <p class="mb-1">You can easily modify the themes by simply changing few variables.
+                                        You even don't
+                                        need to change anything in Prompt's source code. You can easily defined the
+                                        override variables in <code>src/assets/scss/skins/default</code>.</p>
+
+                                    <p>You can even create a completely new theme by simply copying the
+                                        <code>src/assets/scss/skins/default</code> folder and then override the values
+                                        available in the file <code>_variable.scss</code> or
+                                        <code>_custom-variables.scss</code>.</p>
+
+                                    <h5 class="mt-4">Partial Templates (Gulp file includes)</h5>
+
+                                    <p class="mb-1">
+                                        The <a href="https://www.npmjs.com/package/gulp-file-include" target="_blank"
+                                            class="text-primary">gulp-file-include</a> package is used to make partials
+                                        easier
+                                        to use for the development. The following partials are available with the
+                                        context variables:
+                                    </p>
+
+                                    <ol class="mt-3">
+                                        <li>
+                                            <span class="fw-semibold">head.html</span> - contains mainly the
+                                            head element
+                                            <ul>
+                                                <li>
+                                                    <code>@@pageTitle (string)</code> - Allows you to change the page
+                                                    title
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mt-2">
+                                            <span class="fw-semibold">navbar[1-6].html</span> - 6 differet
+                                            styled top navigation bar
+                                            <ul>
+                                                <li>
+                                                    <code>@@classList (string)</code> - Allows you to pass additional
+                                                    class names on navbar
+                                                </li>
+                                                <li>
+                                                    <code>@@fixedWidth (boolean)</code> - Allows you to make the fixed
+                                                    width of the navbar
+                                                </li>
+                                                <li>
+                                                    <code>@@sticky (boolean)</code> - Makes the navbar top sticky if set
+                                                    to true
+                                                </li>
+                                                <li>
+                                                    <code>@@hideSearch (boolean)</code> - Allows to show/hide the search
+                                                </li>
+                                                <li>
+                                                    <code>ctaButtonClass (string)</code> - Allows you to pass class names for CTA button available on right
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mt-2">
+                                            <span class="fw-semibold">footer-scripts.html</span> - Contains the links to javascript files
+                                        </li>
+                                        <li class="mt-2">
+                                            <span class="fw-semibold">menu.html</span> - Contains the top menu content
+                                        </li>
+                                    </ol>
+
+                                    <p class="mt-3">
+                                        You can easily create new <code>.html</code> partials inside the <code>/partials</code>
+                                        folder and point to them from any file by specifying the path to the partial
+                                        file and using the <code>@@include</code> keyword.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    @@include("../partials/footer-scripts.html")
+
+    <!-- docs -->
+    <script src="@@webRoot/assets/js/docs.js"></script>
+
+</body>
+
+</html>

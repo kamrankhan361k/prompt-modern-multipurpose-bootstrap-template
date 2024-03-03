@@ -1,0 +1,359 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card" id="modals">
+            <div class="card-body">
+                <h5 class="card-title mb-0">Modals</h5>
+                <p class="sub-header">
+                    A modal plugin allows to add dialogs to your site for lightboxes, user notifications, or completely custom content, etc.
+                </p>
+
+                <!-- sample modal content -->
+                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Add more storage</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>You are out of storage space.</h5>
+                                <p>To upload more data, please add additional storage space.</p>
+                                <form class="d-flex text-align-center">
+                                    <label class="my-auto me-2" for="selectSize">Select Size: </label>
+                                    <select class="form-select my-1 me-sm-2 w-50" id="selectSize">
+                                        <option selected>Choose...</option>
+                                        <option value="1">1 GB</option>
+                                        <option value="10">10 GB</option>
+                                        <option value="50">50 GB</option>
+                                        <option value="100">100 GB</option>
+                                        <option value="500">500 GB</option>
+                                        <option value="1000">1 TB</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-white" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Upgrade</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <div class="modal fade" id="bs-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myExtraLargeModalLabel">Extra large modal</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.modal -->
+
+                <!--  Modal content for the above example -->
+                <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <div class="modal fade" id="bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-labelledby="myCenterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myCenterModalLabel">Center modal</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Overflowing text to show scroll behavior</h5>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo
+                                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                                    risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p class="mb-0">Praesent commodo cursus magna, vel scelerisque nisl
+                                    consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum
+                                    faucibus dolor auctor.</p>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <!-- Long Content Scroll Modal -->
+                <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalScrollableTitle">Modal title
+                                </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo
+                                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                                    risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                                    et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                    dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                                    cursus magna, vel scelerisque nisl consectetur et. Donec sed
+                                    odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo
+                                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                                    risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                                    et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                    dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                                    cursus magna, vel scelerisque nisl consectetur et. Donec sed
+                                    odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo
+                                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                                    risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                                    et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                    dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                                    cursus magna, vel scelerisque nisl consectetur et. Donec sed
+                                    odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo
+                                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                                    risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                                    et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                    dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                                    cursus magna, vel scelerisque nisl consectetur et. Donec sed
+                                    odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo
+                                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                                    risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                                    et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                    dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                                    cursus magna, vel scelerisque nisl consectetur et. Donec sed
+                                    odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo
+                                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                                    risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                                    et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                    dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                                    cursus magna, vel scelerisque nisl consectetur et. Donec sed
+                                    odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.modal -->
+
+                <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" aria-labelledby="modal-successLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom-0 pb-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center pt-0">
+                                <span class="icon icon-xl text-success">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+                                        <title>Stockholm-icons / Communication / Mail-attachment</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="Stockholm-icons-/-Communication-/-Mail-attachment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                                            <path d="M14.8571499,13 C14.9499122,12.7223297 15,12.4263059 15,12.1190476 L15,6.88095238 C15,5.28984632 13.6568542,4 12,4 L11.7272727,4 C10.2210416,4 9,5.17258756 9,6.61904762 L10.0909091,6.61904762 C10.0909091,5.75117158 10.823534,5.04761905 11.7272727,5.04761905 L12,5.04761905 C13.0543618,5.04761905 13.9090909,5.86843034 13.9090909,6.88095238 L13.9090909,12.1190476 C13.9090909,12.4383379 13.8240964,12.7385644 13.6746497,13 L10.3253503,13 C10.1759036,12.7385644 10.0909091,12.4383379 10.0909091,12.1190476 L10.0909091,9.5 C10.0909091,9.06606198 10.4572216,8.71428571 10.9090909,8.71428571 C11.3609602,8.71428571 11.7272727,9.06606198 11.7272727,9.5 L11.7272727,11.3333333 L12.8181818,11.3333333 L12.8181818,9.5 C12.8181818,8.48747796 11.9634527,7.66666667 10.9090909,7.66666667 C9.85472911,7.66666667 9,8.48747796 9,9.5 L9,12.1190476 C9,12.4263059 9.0500878,12.7223297 9.14285008,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,3 C5,2.44771525 5.44771525,2 6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,12 C19,12.5522847 18.5522847,13 18,13 L14.8571499,13 Z" id="Combined-Shape" fill="#335EEA" opacity="0.3"></path>
+                                            <path d="M9,10.3333333 L9,12.1190476 C9,13.7101537 10.3431458,15 12,15 C13.6568542,15 15,13.7101537 15,12.1190476 L15,10.3333333 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 L9,10.3333333 Z M10.0909091,11.1212121 L12,12.5 L13.9090909,11.1212121 L13.9090909,12.1190476 C13.9090909,13.1315697 13.0543618,13.952381 12,13.952381 C10.9456382,13.952381 10.0909091,13.1315697 10.0909091,12.1190476 L10.0909091,11.1212121 Z" id="Combined-Shape" fill="#335EEA"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <h4 class="text-success mt-0">Awesome!</h4>
+                                <p class="mx-auto text-muted">We receieved your application and will process it shortly.</p>
+                                <div class="mt-4">
+                                    <a href="#" class="btn btn-white btn-sm" data-bs-dismiss="modal">
+                                        <i data-feather="arrow-left" class="icon-xxs me-1"></i>Back
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <div class="modal fade" id="modal-error" tabindex="-1" role="dialog" aria-labelledby="modal-errorLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom-0 pb-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center pt-0">
+                                <span class="icon icon-xl text-danger">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+                                        <title>Stockholm-icons / General / Sad</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="Stockholm-icons-/-General-/-Sad" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                                            <rect id="Combined-Shape" fill="#335EEA" opacity="0.3" x="2" y="2" width="20" height="20" rx="10"></rect>
+                                            <path d="M6.16794971,14.5547002 C5.86159725,14.0951715 5.98577112,13.4743022 6.4452998,13.1679497 C6.90482849,12.8615972 7.52569784,12.9857711 7.83205029,13.4452998 C8.9890854,15.1808525 10.3543313,16 12,16 C13.6456687,16 15.0109146,15.1808525 16.1679497,13.4452998 C16.4743022,12.9857711 17.0951715,12.8615972 17.5547002,13.1679497 C18.0142289,13.4743022 18.1384028,14.0951715 17.8320503,14.5547002 C16.3224187,16.8191475 14.3543313,18 12,18 C9.64566871,18 7.67758127,16.8191475 6.16794971,14.5547002 Z" id="Path-56" fill="#335EEA" transform="translate(12.000000, 15.499947) scale(1, -1) translate(-12.000000, -15.499947) "></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <h4 class="text-danger mt-0">Something went wrong.</h4>
+                                <p class="mx-auto text-muted mt-2">
+                                    We are unable to process your request at the moment. Our appologies, try back in about 5 minutes.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="#" class="btn btn-white btn-sm" data-bs-dismiss="modal">
+                                        <i data-feather="arrow-left" class="icon-xxs me-1"></i>Back
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+                
+
+                <div class="row">
+                    <div class="col">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-soft-primary mb-2 mb-sm-0" data-bs-toggle="modal" data-bs-target="#myModal">Standard modal</button>
+
+                        <!-- Extra large modal -->
+                        <button type="button" class="btn btn-soft-secondary ms-0 ms-sm-5 mb-2 mb-sm-0" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xl">Extra large</button>
+                        
+                        <!-- Large modal -->
+                        <button type="button" class="btn btn-soft-success ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg">Large</button>
+                        
+                        <!-- Small modal -->
+                        <button type="button" class="btn btn-soft-info ms-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-sm">Small</button>
+
+                    </div>
+                    <!-- Col End -->
+                </div>
+
+                <div class="code-block mt-4">
+                    <h6>Example</h6>
+                    <button class="btn btn-sm btn-copy-clipboard" data-bs-target="#modal-ex-1">Copy</button>
+
+                    <pre class="prettyprint lang-html escape" id="modal-ex-1">
+                        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <h4 class="modal-title" id="myModalLabel">Add more storage</h4> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button> </div> <div class="modal-body"> <h5>You are out of storage space.</h5> <p>To upload more data, please add additional storage space.</p> <form class="form-inline"> <label class="my-1 me-2" for="selectSize">Select Size: </label> <select class="form-select my-1 me-sm-2 w-50" id="selectSize"> <option selected>Choose...</option> <option value="1">1 GB</option> <option value="10">10 GB</option> <option value="50">50 GB</option> <option value="100">100 GB</option> <option value="500">500 GB</option> <option value="1000">1 TB</option> </select> </form> </div> <div class="modal-footer"> <button type="button" class="btn btn-white" data-bs-dismiss="modal">Cancel</button> <button type="button" class="btn btn-primary">Upgrade</button> </div> </div> </div> </div>
+                    </pre>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col">
+                        <p class="sub-header">
+                            Add <code>.modal-dialog-centered</code> to <code>.modal-dialog</code> to vertically center the modal.
+                        </p>
+                        <button type="button" class="btn btn-soft-primary" data-bs-toggle="modal" data-bs-target="#centermodal">Vertically center</button>
+                    </div>
+                </div>
+
+                <div class="code-block mt-4">
+                    <h6>Example</h6>
+                    <button class="btn btn-sm btn-copy-clipboard" data-bs-target="#modal-ex-2">Copy</button>
+
+                    <pre class="prettyprint lang-html escape" id="modal-ex-2">
+                        <div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-labelledby="myCenterModalLabel" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered"> <div class="modal-content"> <div class="modal-header"> <h4 class="modal-title" id="myCenterModalLabel">Center modal</h4> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button> </div> <div class="modal-body"> <h5>Overflowing text to show scroll behavior</h5> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p class="mb-0">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> </div> </div> </div> </div>
+                    </pre>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col">
+                        <p class="sub-header">
+                            You can also create a scrollable modal that allows scroll the modal body by adding 
+                            <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code>.
+                        </p>
+                        <button type="button" class="btn btn-soft-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">Scrollable</button>
+                    </div>
+                </div>
+
+                <div class="code-block mt-4">
+                    <h6>Example</h6>
+                    <button class="btn btn-sm btn-copy-clipboard" data-bs-target="#modal-ex-3">Copy</button>
+
+                    <pre class="prettyprint lang-html escape" id="modal-ex-3">
+                        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true"> <div class="modal-dialog modal-dialog-scrollable" role="document"> <div class="modal-content"> <div class="modal-header"> <h4 class="modal-title" id="exampleModalScrollableTitle">Modal title </h4> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button> </div> <div class="modal-body"> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. </p> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. </p> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. </p> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. </p> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. </p> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Save changes</button> </div> </div> </div> </div>
+                    </pre>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col">
+                        <p class="sub-header">
+                            A modal can be used to show contexual messages including success, error, warning, information messages, etc.
+                        </p>
+                        <button type="button" class="btn btn-soft-success ms-2" data-bs-toggle="modal" data-bs-target="#modal-success">Success</button>
+                        <button type="button" class="btn btn-soft-danger ms-2" data-bs-toggle="modal" data-bs-target="#modal-error">Error</button>
+                    </div>
+                </div>
+                <div class="code-block mt-4">
+                    <h6>Example</h6>
+                    <button class="btn btn-sm btn-copy-clipboard" data-bs-target="#modal-ex-4">Copy</button>
+
+                    <pre class="prettyprint lang-html escape" id="modal-ex-4">
+                        <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" aria-labelledby="modal-successLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-sm"><div class="modal-content"><div class="modal-header border-bottom-0 pb-0"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button></div><div class="modal-body text-center pt-0"> <span class="icon icon-xl text-success"> <?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Stockholm-icons / Communication / Mail-attachment</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Stockholm-icons-/-Communication-/-Mail-attachment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+        <path d="M14.8571499,13 C14.9499122,12.7223297 15,12.4263059 15,12.1190476 L15,6.88095238 C15,5.28984632 13.6568542,4 12,4 L11.7272727,4 C10.2210416,4 9,5.17258756 9,6.61904762 L10.0909091,6.61904762 C10.0909091,5.75117158 10.823534,5.04761905 11.7272727,5.04761905 L12,5.04761905 C13.0543618,5.04761905 13.9090909,5.86843034 13.9090909,6.88095238 L13.9090909,12.1190476 C13.9090909,12.4383379 13.8240964,12.7385644 13.6746497,13 L10.3253503,13 C10.1759036,12.7385644 10.0909091,12.4383379 10.0909091,12.1190476 L10.0909091,9.5 C10.0909091,9.06606198 10.4572216,8.71428571 10.9090909,8.71428571 C11.3609602,8.71428571 11.7272727,9.06606198 11.7272727,9.5 L11.7272727,11.3333333 L12.8181818,11.3333333 L12.8181818,9.5 C12.8181818,8.48747796 11.9634527,7.66666667 10.9090909,7.66666667 C9.85472911,7.66666667 9,8.48747796 9,9.5 L9,12.1190476 C9,12.4263059 9.0500878,12.7223297 9.14285008,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,3 C5,2.44771525 5.44771525,2 6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,12 C19,12.5522847 18.5522847,13 18,13 L14.8571499,13 Z" id="Combined-Shape" fill="#335EEA" opacity="0.3"></path>
+        <path d="M9,10.3333333 L9,12.1190476 C9,13.7101537 10.3431458,15 12,15 C13.6568542,15 15,13.7101537 15,12.1190476 L15,10.3333333 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 L9,10.3333333 Z M10.0909091,11.1212121 L12,12.5 L13.9090909,11.1212121 L13.9090909,12.1190476 C13.9090909,13.1315697 13.0543618,13.952381 12,13.952381 C10.9456382,13.952381 10.0909091,13.1315697 10.0909091,12.1190476 L10.0909091,11.1212121 Z" id="Combined-Shape" fill="#335EEA"></path>
+    </g>
+</svg> </span><h4 class="text-success mt-0">Awesome!</h4><p class="mx-auto text-muted">We receieved your application and will process it shortly.</p><div class="mt-4"> <a href="#" class="btn btn-white btn-sm" data-bs-dismiss="modal"><i data-feather="arrow-left" class="icon-xxs me-1"></i>Back</a></div></div></div></div></div>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

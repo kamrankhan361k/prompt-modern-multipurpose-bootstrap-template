@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.978301,
+          40.763342
+        ]
+      },
+      "properties": {
+        "id": 21,
+        "label": "$121",
+        "name": "Coderthemes Design LLP",
+        "link": "/",
+        "description": "",
+        "address": "565 Brrom Str, NY"
+      }
+    }
+  ]
+}

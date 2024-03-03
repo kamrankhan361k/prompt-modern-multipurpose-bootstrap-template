@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+        "pageTitle": "Prompt | Documentation"
+    })
+</head>
+
+<body>
+
+    <!-- Top navbar  -->
+    @@include('../partials/navbars/navbar3.html', { "classList": "shadow fixed-top navbar-light bg-white", "hideSearch": false, "ctaButtonClass": "btn btn-outline-primary btn-sm"})
+
+    <div class="content py-0 py-sm-4 px-0 px-sm-3 bg-light" data-sticky-container>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-2 col-xl-2 sidenav sidenav-left">
+                    @@include("./sidenav.html")
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2">
+                    
+                    <!-- AoS Start -->
+                    @@include("./custom-aos.html")
+                    <!-- AoS End -->
+
+                    <!-- countup Start -->
+                    @@include("./custom-countup.html")
+                    <!-- countup End -->
+
+                    <!-- custom-jarallax start -->
+                    @@include("./custom-jarallax.html")
+                    <!-- custom-jarallax end -->
+
+                    <!-- swiper -->
+                    @@include("./custom-swiper.html")
+                    <!-- swiper end -->
+
+                </div>
+
+                <div class="col-12 col-lg-2 col-xl-2 d-none d-lg-block px-lg-0 sidenav sidenav-right">
+                    <div class="border-left-lg">
+                        <ul class="nav flex-column" id="toc-list">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aos" data-toggle="smooth-scroll">AoS Animation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#countup" data-toggle="smooth-scroll">Countup</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#jarallax" data-toggle="smooth-scroll">Jarallax (Parallax)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#swiper" data-toggle="smooth-scroll">Swiper</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    @@include("../partials/footer-scripts.html")
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+
+    <!-- docs -->
+    <script src="@@webRoot/assets/js/docs.js"></script>
+
+</body>
+
+</html>

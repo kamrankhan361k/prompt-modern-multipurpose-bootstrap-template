@@ -1,0 +1,35 @@
+<header>
+  <nav class="navbar navbar-expand-lg topnav-menu @@classList" @@if (context.sticky == true){data-toggle="sticky"}>
+    <div class="container@@if (context.fixedWidth !== true){-fluid}">
+      <a class="navbar-brand" href="/">
+        <img src="@@webRoot/assets/images/logo.png" height="30" class="d-inline-block align-top" alt="" />
+      </a>
+      <a href="#" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content3"
+        aria-controls="topnav-menu-content3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+      <div class="collapse navbar-collapse" id="topnav-menu-content3">
+        @@if (typeof(context.ctaButtonClass) !== 'undefined') {
+          @@include('../menu.html', {"classList": "mx-auto", "ctaButtonClass": "@@ctaButtonClass"})
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn @@ctaButtonClass" href="#">Download</a>
+            </li>
+          </ul>
+        }
+
+        @@if (typeof(context.ctaButtonClass) === 'undefined') {
+          @@include('../menu.html', {"classList": "mx-auto", "ctaButtonClass": "btn-primary"})
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn btn-soft-primary" href="#">Download</a>
+            </li>
+          </ul>
+        }
+
+      </div>
+    </div>
+  </nav>
+</header>

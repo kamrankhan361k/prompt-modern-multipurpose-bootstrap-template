@@ -1,0 +1,38 @@
+<header>
+  <nav class="navbar navbar-expand-lg topnav-menu @@classList" @@if (context.sticky == true){data-toggle="sticky"}>
+    <div class="container@@if (context.fixedWidth !== true){-fluid}">
+      <a class="navbar-brand logo" href="/">
+        <img src="@@webRoot/assets/images/logo.png" height="30" class="align-top logo-dark" alt="" />
+        <img src="@@webRoot/assets/images/logo-light.png" height="30" class="align-top logo-light" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content"
+        aria-controls="topnav-menu-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="topnav-menu-content">
+        <ul class="navbar-nav align-items-lg-center d-flex me-auto">
+          @@if (context.hideSearch !== true) {
+          <li>
+            <form action="#" id="search" class="form-inline d-none d-sm-flex">
+              <div class="form-control-with-hint ms-lg-2 ms-xl-4">
+                <input type="text" class="form-control" id="search-input" placeholder="What are you looking for?" />
+                <span class="form-control-feedback uil uil-search fs-16"></span>
+              </div>
+            </form>
+          </li>
+          }
+        </ul>
+
+        @@if (typeof(context.ctaButtonClass) !== 'undefined') {
+          @@include('../menu.html', {"classList": "", "showDownload": true, "ctaButtonClass": "@@ctaButtonClass"})
+        }
+
+        @@if (typeof(context.ctaButtonClass) === 'undefined') {
+          @@include('../menu.html', {"classList": "", "showDownload": true, "ctaButtonClass": "btn-primary"})
+        }
+      </div>
+    </div>
+  </nav>
+
+</header>
